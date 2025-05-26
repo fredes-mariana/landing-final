@@ -1,29 +1,58 @@
 body {
-    background-color: #33d1ff;
+    background-color: #004078e1;
     font-family: 'Shadows Into Light';
 }
 .nav {
-    background-color: #90e0ef;
-    border-radius: 10px;
+    background-color: #9ee7f4;
+    border-radius: 0px;
     display: flex;
-    justify-content: space-between;
-    position: fixed;
-    width: 95%;
-}
-.nav h1 {
-    padding: 0px 0px 0px 50px;
+    position: relative;
+    width: 100%;
+    overflow: auto;
 }
 .nav ul {
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    padding: 10px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+    margin: 0px;
+    width: 100%;
 }
-.nav a {
+.nav ul li a {
+    display: block;
     color: black;
     text-decoration: none;
+    border: 2px solid white;
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+    margin: 2px;
 }
 .nav a:hover{
-    color: white;
+    color: #11b1b7;
+}
+.nav .logo {
+    display: flex;
+    align-items: center;
+}
+.nav .logo h1 {
+    font-weight: lighter;
+}
+.nav .logo img {
+    width: 80px;
+    height: auto;
+    border-radius: 50px;
+}
+@media screen and (max-width: 768px) {
+    .nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .nav {
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav .logo img {
+        width: 80px;
+        height: auto;
+    }
 }
