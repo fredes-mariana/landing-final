@@ -4,20 +4,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eterlingerie</title>
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="registro/login.html">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animaciones.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <nav class="nav">
-        <h1>Eter</h1>
+        <div class="logo">
+            <img src="img/IMG_2575.jpg">
+            <h1>  Eter  </h1>
+        </div>
+
+        <input type="checkbox" id="toggle" class="menuh">
+        <label for="toggle" class="hamburguesa">&#9776;</label>
         <ul>
-            <li><a href="#">Info</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Envio</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#hero">Info.</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#contacto">Envio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#productos">Productos</a></li>
         </ul>
-    </nav>
+        <div class="overlay"></div>
+    </nav> <!--nav-->
+<main>
+
+    <section id="hero">
+
+        <div class="hero-texto">
+            <h2>
+                Life is better in a bikini
+            </h2>
+            <p>Proximamente stock de verano: pareos, gorras y mucho mas!</p>
+            <div class="hero-button">
+                <a href="#contacto">contactanos</a>
+                <a href="registro/login.html" target="_blank">Registrate!</a>
+            </div>
+        </div>
+        <div class="hero-foto">
+            <img src="img/foto1.jpg">
+        </div>
+
+    </section>
+
+
+    <section class="about-us">
+        <p>Somos Eter, un emprendimiento hecho para que toda tu ropa sea unica y especial. Encontra los mejores modelos en bikinis, lenceria, y pijamas en nuestra web. Seguinos en instagram/facebook para participar de sorteos, promociones y descuentos unicos!</p>
+    </section><!--section about-us-->
+   
+    <section id="beneficios">
+        <h2>Nuestros beneficios</h2>
+        <p>Por qué elegir a Eter al momento de comprar indumentaria?</p>
+        
+     <div class="cards"><!--contenedor de cards-->
+        <div class="card">
+            <img src="img/IMG_2625.jpg" alt="">
+            <h3>Diseños únicos</h3>
+            <p>Pensados para tu comodidad y estilo.</p>
+        </div>
+        <div class="card">
+            <img src="img/modelos.jpg">
+            <h3>Hecho en Argentina</h3>
+            <p>Apoyamos la producción local, hecho con amor y cuidado.</p>
+        </div>
+        <div class="card">
+            <img src="img/mundo.jpg">
+            <h3>Envíos a todo el país</h3>
+            <p>Recibí tu pedido en casa estés donde estés.</p>
+        </div>
+    </div> <!--cards-->
+    </section> <!--beneficios-->
+
+    <section id="productos"><!--seccion de productos-->
+        <div class="caja-productos"> <!--caja contenedora de los productos-->
+            <div class="producto"> <!--producto conjunto de bombachas-->
+                <img src="img/bombacha.jpg">
+                <p>Conjunto x4 bombachas</p>
+                <div class="precio">
+                    <p>$5.000</p>
+                    <button>Comprar</button>
+                </div> 
+            </div>
+
+            <div class="producto"><!--conjunto que prende adelante-->
+                <img src="img/conjuntoadelante.jpg">
+                <p>Conjunto 100% algodon</p>
+                <div class="precio">
+                    <p>$10.000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="producto"> <!--conjunto de encaje-->
+                <img src="img/conjuntoencaje.jpg" alt="">
+                <p>Conjunto encaje</p>
+                <div class="precio">
+                    <p>$13.000</p>
+                    <button>comprar</button>
+                </div>
+            </div>
+
+            <div class="producto"><!--conjuntos tela morley-->
+                <img src="img/conjuntosmorley.jpg" alt="">
+                <p>Conjuntos x2 Morley</p>
+                <div class="precio">
+                    <p>$20.000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="producto"><!--corpiños sin mangas-->
+                <img src="img/corpiños.jpg" alt="">
+                <p>Corpiños x2 Bando</p>
+                <div class="precio">
+                    <p>$7.000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="producto"><!--tops deportivos-->
+                <img src="img/topsdeportivos.jpg" alt="">
+                <p>Conjunto x2 tops deportivos 100%algodon</p>
+                <div class="precio">
+                    <p>$8.000</p>
+                    <button>comprar</button>
+                 </div>
+            </div>
+
+            <div class="producto"><!--remera negra-->
+                <img src="img/remeranegra.jpg" alt="">
+                <p>Remera manga larga negra</p>
+                <div class="precio">
+                    <p>$10.000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="producto"><!--remera marron-->
+                <img src="img/remeramarron.jpg" alt="">
+                <p>Remera marron manga larga</p>
+                <div class="precio">
+                    <p>$10.000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="producto"><!--pijama negro-->
+                <img src="img/pijamanegro.jpg" alt="">
+                <p>Pijama negro verano</p>
+                <div class="precio">
+                    <p>$15.000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="producto"><!--pijama celeste-->
+                <img src="img/pijamaceleste.jpg" alt="">
+                <p>Pijama celeste verano</p>
+                <div class="precio">
+                    <p>$15.000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div> <!--fin caja productos-->
+    </section> <!--final de seccion productos-->
+
+
+    <section id="contacto">
+        <h2>Conectá con Éter, estamos para vos todos los dias de 9am a 21pm.</h2>
+        <div class="contenedor-contacto"> <!--caja-contenedora-->
+            <div class="iconos"><!--caja-iconos-->
+         <div class="icono">
+            <a href="https://maps.app.goo.gl/SWztLFxkFSrMxHJm8" target="_blank">
+                <i class="fa-solid fa-location-dot"></i><!--ubicacion-->
+                Olavarria, Buenos Aires.
+            </a>
+
+        </div>
+        <div class="icono">
+            <a href="https://www.instagram.com/eter.intima?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <i class="fa-brands fa-instagram"></i> <!--instagram-->
+                @eter.intima
+            </a>
+        </div>
+        <div class="icono">
+            <a href="" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i><!--facebook-->
+                @eter.intima
+            </a>
+        </div>
+        <div class="icono">
+            <a href="https://www.bing.com/ck/a?!&&p=2392ca52f369e50a9cc4df37bce89a4df7bf192c32fffb12d7810a19a289139dJmltdHM9MTc1MTE1NTIwMA&ptn=3&ver=2&hsh=4&fclid=3f58dbf5-ba72-63fa-1bc5-ce71bb8762bb&psq=whatsapp+web&u=a1aHR0cHM6Ly93ZWIud2hhdHNhcHAuY29tLw&ntb=1" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i><!--whatsapp-->
+                2281-325543
+            </a>
+        </div>
+        <div class="icono">
+            <a href="https://www.correoargentino.com.ar/" target="_blank">
+                <i class="fa-solid fa-truck"></i><!--envio-->
+                correo argentino
+            </a>
+            
+        </div>
+        </div><!--iconos-->
+        <div class="foto-eter"><!--imagen contacto-->
+            <img src="img/Imagen de WhatsApp 2025-06-29 a las 21.30.38_db8d0240.jpg">
+        </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <h3>Eter, gracias por visitarnos!</h3>
+        <div class="iconos-footer">
+            <div class="iconito">
+            <a href="https://www.instagram.com/eter.intima?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <i class="fa-brands fa-instagram"></i> <!--instagram-->
+            </a>
+        </div>
+        <div class="iconito">
+            <a href="" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i><!--facebook-->
+            </a>
+        </div>
+        <div class="iconito">
+            <a href="https://www.bing.com/ck/a?!&&p=2392ca52f369e50a9cc4df37bce89a4df7bf192c32fffb12d7810a19a289139dJmltdHM9MTc1MTE1NTIwMA&ptn=3&ver=2&hsh=4&fclid=3f58dbf5-ba72-63fa-1bc5-ce71bb8762bb&psq=whatsapp+web&u=a1aHR0cHM6Ly93ZWIud2hhdHNhcHAuY29tLw&ntb=1" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i><!--whatsapp-->
+            </a>
+        </div>
+    </footer>
+</main>
 </body>
 </html>

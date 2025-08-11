@@ -1,0 +1,129 @@
+@media screen and (max-width: 800px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+  }
+
+  .nav ul {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 250px;
+    height: auto;
+    background-color: #9ee7f4;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+    z-index: 1000;
+  }
+
+  .menuh:checked + .hamburguesa + ul {
+    transform: translateX(0%);
+  }
+
+  .hamburguesa {
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1100;
+    position: relative;
+  }
+.about-us {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+.cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+.card {
+        padding: 5px;
+    }
+.caja-productos {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+    .nav {
+        position: fixed;
+    }
+    .nav ul li a {
+        font-size: 12px;
+        margin: 5px;
+    }
+    .hero-button {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .hero-button a {
+        width: 120px;
+        margin: 8px 5px;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .hero-foto {
+        width: 100%;
+    }
+    .hero-foto img {
+        width: 100%;
+    }
+    .hero-texto h2 {
+        font-size: x-large;
+    }
+    .about-us {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .about-us p {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #beneficios h2 {
+        font-size: 1.5em;
+    }
+    #beneficios p {
+        font-size: medium;
+    }
+    .card {
+        padding: 5px;
+        width: 90%;
+    }
+    #contacto h2 {
+        font-size: x-large;
+    }
+    .iconos {
+        gap: 10px;
+    }
+    .icono {
+        padding: 5px;
+    }
+    .icono a {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero-button a {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+    .nav {
+        position: fixed;
+    }
+}
