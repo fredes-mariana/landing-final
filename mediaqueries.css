@@ -1,10 +1,12 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 9200px) {
   .nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     position: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .nav ul {
@@ -36,27 +38,48 @@
     z-index: 1100;
     position: relative;
   }
-.about-us {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+  #hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-texto {
+    align-items: center;
+  }
+  .hero-foto {
+    max-width: 90%;
+    align-content: center;
+  }
+.about-us p {
+        align-items: center;
+        width: 100%;
     }
 .cards {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 .card {
         padding: 5px;
+        align-items: center;
     }
 .caja-productos {
     grid-template-columns: repeat(2, 1fr); 
     gap: 10px;
     padding: 10px;
+    justify-content: center;
+  }
+  #contacto h2 {
+    margin: 5px;
   }
 }
 
 
 @media screen and (max-width: 640px) {
+    body {
+    overflow-x: hidden;
+    }
     .nav {
         position: fixed;
     }
@@ -125,5 +148,13 @@
     }
     .nav {
         position: fixed;
+    }
+    #productos {
+        margin: 10px;
+        justify-content: center;
+    }
+    .caja-productos {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
     }
 }

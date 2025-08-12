@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: #004078e1;
     font-family: 'Shadows Into Light';
@@ -11,7 +14,7 @@ body {
     position: fixed;
     z-index: 1000;
     width: 100%;
-    gap: 10px;
+    gap: 0px;
     overflow: auto;
     align-items: center;
     justify-content: space-between;
@@ -24,7 +27,7 @@ body {
     align-items: center;
     list-style: none;
     margin: 0px;
-    width: 100%;
+    width: 90%;
     list-style: none;
     gap: 20px;
 }
@@ -99,12 +102,12 @@ main {
 .hero-foto {
    display: flex;
    gap: 5px;
-   width: 50%;
+   max-width: 100%;
 }
 .hero-foto img {
     border-radius: 20px;
-    padding: 10px;
-    width: 60%;
+    padding: 0px;
+    width: 100%;
 }
 .hero-texto {
    display: flex;
@@ -139,7 +142,7 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 80%;
+    width: 90%;
 }
 .about-us p {
    color: black;
@@ -173,9 +176,10 @@ main {
 
 #productos {
     width: 100%;
-    gap: 25px;
-    padding: 20px;
+    gap: 15px;
+    padding: 10px;
     text-align: center;
+    justify-content: center;
 }
 
 .caja-productos {
@@ -189,12 +193,15 @@ main {
     border-radius: 15px;
     padding: 15px;
     display: flex;
+    width: 90%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     background-color: antiquewhite;
     border: 1px solid;
     font-size: 15px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.20) ;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.20);
 }
 
 .producto img {
