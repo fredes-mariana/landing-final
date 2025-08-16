@@ -1,4 +1,4 @@
-@media screen and (max-width: 9200px) {
+@media screen and (max-width: 920px) {
   .nav {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -6,7 +6,6 @@
     width: 100%;
     position: fixed;
     overflow-y: hidden;
-    overflow-x: hidden;
   }
 
   .nav ul {
@@ -14,7 +13,6 @@
     top: 80px;
     right: 0;
     width: 250px;
-    height: auto;
     background-color: #9ee7f4;
     flex-direction: column;
     gap: 10px;
@@ -38,123 +36,166 @@
     z-index: 1100;
     position: relative;
   }
+
+  /* Hero */
   #hero {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 20px;
   }
   .hero-texto {
     align-items: center;
+    text-align: center;
+    width: 100%;
   }
   .hero-foto {
     max-width: 90%;
-    align-content: center;
+    margin: 0 auto;
   }
-.about-us p {
-        align-items: center;
-        width: 100%;
-    }
-.cards {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-.card {
-        padding: 5px;
-        align-items: center;
-    }
-.caja-productos {
-    grid-template-columns: repeat(2, 1fr); 
+  .hero-foto img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* About */
+  .about-us {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us p {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Cards */
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  .card {
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+  }
+
+  /* Productos */
+  .caja-productos {
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10px;
     justify-content: center;
   }
+
   #contacto h2 {
     margin: 5px;
+    text-align: center;
   }
 }
 
 
+/* ==============================
+   2) Móviles medianos (<=640px)
+   ============================== */
 @media screen and (max-width: 640px) {
-    body {
+  body {
     overflow-x: hidden;
-    }
-    .nav {
-        position: fixed;
-    }
-    .nav ul li a {
-        font-size: 12px;
-        margin: 5px;
-    }
-    .hero-button {
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-    .hero-button a {
-        width: 120px;
-        margin: 8px 5px;
-        padding: 5px;
-        font-size: 15px;
-    }
-    .hero-foto {
-        width: 100%;
-    }
-    .hero-foto img {
-        width: 100%;
-    }
-    .hero-texto h2 {
-        font-size: x-large;
-    }
-    .about-us {
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .about-us p {
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    #beneficios h2 {
-        font-size: 1.5em;
-    }
-    #beneficios p {
-        font-size: medium;
-    }
-    .card {
-        padding: 5px;
-        width: 90%;
-    }
-    #contacto h2 {
-        font-size: x-large;
-    }
-    .iconos {
-        gap: 10px;
-    }
-    .icono {
-        padding: 5px;
-    }
-    .icono a {
-        gap: 5px;
-    }
+  }
+
+  /* Nav */
+  .nav ul li a {
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  /* Hero */
+  .hero-button {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+  .hero-button a {
+    width: 120px;
+    margin: 8px 5px;
+    padding: 5px;
+    font-size: 15px;
+  }
+  .hero-texto h2 {
+    font-size: x-large;
+  }
+
+  /* About */
+  .about-us {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Beneficios */
+  #beneficios h2 {
+    font-size: 1.5em;
+  }
+  #beneficios p {
+    font-size: medium;
+  }
+
+  /* Cards */
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Contacto */
+  #contacto h2 {
+    font-size: x-large;
+  }
+
+  /* Iconos */
+  .iconos {
+    gap: 10px;
+    justify-content: center;
+  }
+  .icono {
+    padding: 5px;
+  }
+  .icono a {
+    gap: 5px;
+  }
 }
 
+
+/* ==============================
+   3) Móviles chicos (<=400px)
+   ============================== */
 @media screen and (max-width: 400px) {
-    .hero-button a {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        align-items: center;
-    }
-    .nav {
-        position: fixed;
-    }
-    #productos {
-        margin: 10px;
-        justify-content: center;
-    }
-    .caja-productos {
-        grid-template-columns: repeat(1, 1fr);
-        margin: 10px;
-    }
+  /* Hero */
+  .hero-button {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-button a {
+    width: 80%;
+    margin: 5px auto;
+  }
+
+  /* Productos */
+  #productos {
+    margin: 10px;
+    text-align: center;
+  }
+  .caja-productos {
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+
+  /* Cards */
+  .card {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 }
