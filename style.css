@@ -9,15 +9,16 @@ body {
     background-color: #9ee7f4;
     display: flex;
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
     width: 100%;
     gap: 0px;
     overflow: hidden;
     box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 10px;
+    padding: 15px;
     top: 0px;
+      background: linear-gradient(to bottom,#9ee7f4, #004078e1);
 }
 .nav ul {
     display: flex;
@@ -27,7 +28,6 @@ body {
     margin: 0px;
     width: auto;
     list-style: none;
-    gap: 20px;
 }
 .nav ul li a {
     display: flex;
@@ -37,7 +37,8 @@ body {
     background-color: white;
     padding: 5px 10px 5px 10px;
     border-radius: 15px;
-    margin: 15px;
+    box-sizing: border-box;
+    margin: 10px;
     gap: 20px;
 }
 .nav a:hover{
@@ -133,7 +134,7 @@ main {
 .hero-foto img {
     border-radius: 20px;
     padding: 0px;
-    width: 60%;
+    width: 50%;
     display: block;
 }
 .about-us {
@@ -334,30 +335,31 @@ main {
 
 footer {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  width: 100vw;
-  background: linear-gradient(to bottom, transparent, #004078e1, #9ee7f4);
+  width: 100%;
+  max-width: 100%;
   padding: 20px 10px;
   margin: 0;
+  overflow: hidden;
   box-sizing: border-box; 
   flex-wrap: wrap;
   gap: 20px;
 }
-
 footer h3 {
   color: beige;
   font-weight: 200;
   margin: 0;
-  flex: 1 1 300px;
+  flex: 1 1 auto;
 }
 
 .iconos-footer {
   display: flex;
   flex-direction: row;
   gap: 15px;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-end;
   flex: 1 1 200px;
 }
 
