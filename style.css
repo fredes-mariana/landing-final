@@ -128,6 +128,7 @@ main {
 }
 .hero-foto {
    display: flex;
+   justify-content: center;
    gap: 5px;
    max-width: 50%;
 }
@@ -168,7 +169,8 @@ main {
 #beneficios p {
     font-weight: 350px;
     font-size: 1.5em;
-    background-color: #9ee7f4;
+    color: antiquewhite;
+    text-align: center;
     border-radius: 15px;
     padding: 5px;
 }
@@ -241,7 +243,9 @@ main {
 .cards {
     display: flex;
     flex-direction: row;
+    padding: 15px;
     gap: 20px;
+    box-sizing: border-box;
 }
 
 .card {
@@ -278,24 +282,23 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 #contacto h2 {
     font-size: 2em;
-    background-color: #9ee7f4;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
+    box-sizing: border-box;
 }
-.contenedor-contacto {
-    display: flex;
-    flex-direction: row;
-}
+
 .iconos {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
+    box-sizing: border-box;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 20px;
@@ -319,18 +322,6 @@ main {
 }
 .icono a:hover {
     color: antiquewhite;
-}
-.foto-eter {
-    width: 60%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.foto-eter  img {
-    width: 100%;
-    max-width: 600px;
-    max-height: 500px;
-    border-radius: 20px;
 }
 
 footer {
